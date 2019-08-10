@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    float X,sum=0;
+    float disc, P;
+   scanf("%f %f",&X,&P);
+   while(X>1 || X==1)
+   {
+   disc=(P*X)/100;
+   sum=sum+X;
+   if(X==1)
+   {
+   break;
+   }
+   X=X-disc;
+   
+   }
+   printf("%.2f",sum);
+    return 0;
+}
